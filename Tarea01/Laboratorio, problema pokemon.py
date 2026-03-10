@@ -13,7 +13,7 @@ edad = int(edad)
 
 if edad < 10 or edad > 150:
     print("Error: edad inválida, debe estar entre 10 y 150")
-    exit()  # detiene el programa
+    exit()  
     
 
 #-------------------------------------------------------------

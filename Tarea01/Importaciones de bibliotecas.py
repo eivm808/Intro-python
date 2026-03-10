@@ -12,12 +12,29 @@
 #Requerimientos del sistema: Python 3.8 o superior
 
 #--------------------------------------------Importaciones--------------------------------------------------------
-
 import math
-#Funcion 1: Calcula la raiz cuadrada de un numero.
-#print(math.sqrt(16))
 
+#Funcion 1: Calcular la raiz cuadrada de un numero.
+
+print("Raiz cuadrada: ", math.sqrt(16))
+
+#Funcion 2: Calcular el Máximo común divisor de numero y numero
+
+print ("MCD de numero y numero: ", math.gcd(20, 10)) 
+
+#--------------------------------------------------------------------------------
 import random
+
+#Funcion 1: Escojer un entero aleatorio entre 1 y 10
+
+print("Numero random entre 1 y 10: ", random.randint(1,10))
+
+#Funcion 2: Seleccionar un elemento al azar 
+
+frutas = ["manzana", "banana","cereza"]
+print("Fruta random: ", random.choice(frutas))
+
+#--------------------------------------------------------------------------------
 import datetime
 import os
 
@@ -85,5 +102,14 @@ c = Counter("banana")
 print("Cantidad de elementos: ",c)               #Counter({'a': 3, 'n' = 2, 'b' = 1})
 print("Elemento mas comun: ", c.most_common(1)) # [('a', 3)]
 
+#Funcion 2: Crear subclases de tuplas
 
+from collections import namedtuple
 
+Persona = namedtuple('Persona', ['nombre', 'edad'])
+p = Persona(nombre="Ana", edad=30)
+print(p.nombre)  # Ana
+print(p[1])      # 30
+
+#----------------------------------------------------------------------------------
+#hola
